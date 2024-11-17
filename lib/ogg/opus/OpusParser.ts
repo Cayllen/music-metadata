@@ -32,8 +32,8 @@ export class OpusParser extends VorbisParser {
     this.metadata.setFormat('codec', 'Opus');
     // Parse Opus ID Header
     this.idHeader = new Opus.IdHeader(pageData.length).get(pageData, 0);
-    if (this.idHeader.magicSignature !== "OpusHead")
-      throw new OpusContentError("Illegal ogg/Opus magic-signature");
+    // if (this.idHeader.magicSignature !== "OpusHead")
+    //   throw new OpusContentError("Illegal ogg/Opus magic-signature"+ this.idHeader.magicSignature);
     this.metadata.setFormat('sampleRate', this.idHeader.inputSampleRate);
     this.metadata.setFormat('numberOfChannels', this.idHeader.channelCount);
   }
