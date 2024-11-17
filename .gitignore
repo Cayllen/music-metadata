@@ -3,9 +3,7 @@ node_modules/
 test/**/*.js
 test/**/*.js.map
 test/**/*.d.ts
-lib/**/*.js
-lib/**/*.js.map
-lib/**/*.d.ts
+
 doc-gen/**/*.js
 doc-gen/**/*.map
 test/samples/originals
