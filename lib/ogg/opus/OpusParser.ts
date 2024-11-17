@@ -7,7 +7,7 @@ import type {IOptions} from '../../type.js';
 import type {INativeMetadataCollector} from '../../common/MetadataCollector.js';
 
 import * as Opus from './Opus.js';
-import { OpusContentError } from './Opus.js';
+// import { OpusContentError } from './Opus.js';
 
 /**
  * Opus parser
